@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+header{
+    background-color: lightgray;
+}
+body{
+    background-color: lightgreen;
+}
+
+main{
+    background-color: lightblue;
+    
+
+}
+div{
+    max-width: 500px;
+    display: inline-block;    
+}
+img{
+    max-width: 500px;
+}
+section{
+    display: inline-block;
+}
+
