@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section{
+            margin: 10px;
+            padding: 10px;
+        }
+        .a{
+            background-color: lightgreen;
+        }
+        .b{
+            background-color: lightpink;
+        }
+    </style>
+</head>
+<body>
+    <section class="a">
+        <form action="" method="get" >
+            <input type="text" value="nada">
+            <button type="reset">limpar</button>
+        </form>
+    </section>
+    <section class="b">
+        <fieldset>
+            <legend>formulario</legend>
+            <label for="Name"> nome
+                <input type="text" name="" id="">
+                <button type="submit">enviar</button>
+            </label>
+            <label for="email"> email
+                <input type="text" name="" id="">
+                <button type="submit">enviar</button>
+            </label>
+        </fieldset>
+    </section>
+    <section class="a">
+        <input type="color" list="color" placeholder="escolha uma cor">
+        
+        <datalist id="color">
+            <option value="#00ff00"></option>
+            <option value="#0000ff"></option>
+            <option value="#ff0000"></option>
+            <option value="#03f200"></option>
+        </datalist>
+    </section>
+    <section class="b">
+        <form action="">
+            <label for="nome">Pesquisa</label>
+            <input type="search" pattern="[0-9]{3}" title="Use apenas 3 números: 123">
+            <button>Pesquisa</button>
+        </form>
+    </section>
+    <section class="a">
+        <input type="mail" autocomplete="email">
+    </section>
+    <section class="b">
+        <fieldset>
+            <legend>Voce é esperto ou burro</legend>
+            <label for="nao">Esperto</label>
+            <input type="radio" id="nao" name="Qi" value="no">
+            <label for="sou">Burro</label>
+            <input checked type="radio" id="sim" name="Qi" value="yes">
+        </fieldset>
+    </section>
+</body>
+</html>
