@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .conteiner{
+            max-width: 500px;
+            background-color: rgb(247, 233, 233);
+            margin: 0 auto;
+            border: 1px solid blue;
+            padding: 5px;
+            display: flex;
+
+        }
+        .item{
+            margin: 5px;
+            padding: 5px;
+            background-color: lightcoral;
+            font-size: 1.5em; 
+            flex: 1;
+        }
+        h1{
+            text-align: center;
+            margin: auto;
+        }
+        .row{
+            flex-direction: row;
+        }
+        .row-reverse{
+            flex-direction: row-reverse;
+        }
+        .column{
+            flex-direction: column;
+        }
+        .column-reverse{
+            flex-direction: column-reverse;
+        }
+     
+    </style>
+</head>
+<body>
+    <h1>Display: Flex-direction-row  </h1>
+    <section class="conteiner row">
+        <div class="item">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item">item 3</div>
+        <div class="item">item 4</div>
+    </section>
+    <h1>Display: Flex-direction-row-reverse  </h1>
+    <section class="conteiner row-reverse">
+        <div class="item">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item">item 3</div>
+        <div class="item">item 4</div>
+    </section>
+    <h1>Display: Flex-direction-column  </h1>
+    <section class="conteiner column">
+        <div class="item">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item">item 3</div>
+        <div class="item">item 4</div>
+    </section>
+    <h1>Display: Flex-direction-column-reverse  </h1>
+    <section class="conteiner column-reverse">
+        <div class="item">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item">item 3</div>
+        <div class="item">item 4</div>
+    </section>
+
+    
+</body>
+</html>

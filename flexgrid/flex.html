@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo/style.css">
+    <title>Flex</title>
+    <style>
+        .conteiner{
+            max-width: 500px;
+            background-color: rgb(247, 233, 233);
+            margin: 0 auto;
+            border: 1px solid blue;
+            padding: 5px;
+
+        }
+        .item{
+            margin: 5px;
+            padding: 5px;
+            background-color: lightcoral;
+            font-size: 1.5em;
+            flex:1;
+        }
+        h1{
+            text-align: center;
+            margin: auto;
+        }
+        
+        .flex{
+            display: flex;
+
+        }
+        .flex-wrap{
+            flex-wrap: wrap;
+        }
+        .flex-item{
+            flex:1;
+        }
+    </style>
+</head>
+<body>
+    <h1>Display: Block </h1>
+    <section class="conteiner">
+        <div class="item">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item">item 3</div>
+        <div class="item">item 4</div>
+    </section>
+    <h1>Display: flex </h1>
+    <section class="conteiner flex">
+        <div class="item">Teste item 1</div>
+        <div class="item">item 2</div>
+        <div class="item">item 3</div>
+        <div class="item">item 4</div>
+    </section>
+    <h1>Display: flex (estourando conteiner)</h1>
+    <section class="conteiner flex">
+        <div class="item">Teste item 1</div>
+        <div class="item">Teste item 2</div>
+        <div class="item">Teste item 3</div>
+        <div class="item">Teste item 4</div>
+        <div class="item">Teste item 5</div>
+        <div class="item">Teste item 6</div>
+        <div class="item">Teste item 7</div>
+        <div class="item">Teste item 8</div>
+        <div class="item">Teste item 9</div>
+    </section>
+    <h1>Display: flex flex-wrap </h1>
+    <section class="conteiner flex flex-wrap">
+        <div class="item">Teste item 1</div>
+        <div class="item">Teste item 2</div>
+        <div class="item">Teste item 3</div>
+        <div class="item">Teste item 4</div>
+        <div class="item">Teste item 5</div>
+        <div class="item">Teste item 6</div>
+        <div class="item">Teste item 7</div>
+        <div class="item">Teste item 8</div>
+        <div class="item">Teste item 9</div>
+    </section>
+    <h1>Display: flex flex-item </h1>
+    <section class="conteiner flex ">
+        <div class="item flex-item">Teste item 1</div>
+        <div class="item flex-item">Teste item 2</div>
+        <div class="item flex-item">Teste item 3</div>
+        <div class="item flex-item">Teste item 4</div>
+        <div class="item flex-item">Teste item 5</div>
+        <div class="item flex-item">Teste item 6</div>
+        
+    </section>
+
+    
+</body>
+</html>
