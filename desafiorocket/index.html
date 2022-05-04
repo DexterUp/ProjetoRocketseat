@@ -10,24 +10,66 @@
             margin: 0;
         }
         header{
+            padding: 4rem;
             background-color: lightgray;
-            padding: 3rem;
         }
-        .menu{
+        nav{
             display: flex;
-            flex-wrap: wrap;
-            align-items: center;
             justify-content: space-between;
-            
-        }
-        .menu > a{
-            text-decoration: none;
+            align-items: center;
         }
         ul{
             display: flex;
             list-style: none;
             align-items: center;
-            gap: 3rem;
+            gap: 8rem;
+        }
+        ul li:last-child {
+            background-color: black;
+            color: white;
+            padding: 0.8rem;
+        }
+        .container{
+            display: flex;
+            gap: 1rem;
+        }
+        aside, main{
+            border: 1px solid;
+            height: 95vw;
+            margin: 5px;
+        }
+        aside{
+            flex-basis: 25%;
+        }
+        main{
+            flex: 1;
+        }
+        img{
+            width: 30%;
+            height: auto;
+        }
+        .gallery{
+            display: flex;
+            flex-wrap: wrap;
+            gap: .8rem;
+            justify-content: center;
+        }
+        button{
+            display: flex;
+            align-items: center;
+            line-height: 0;
+            gap: .4rem;
+        }    
+        button img{
+            width: 2rem;
+            height: 2rem;
+        }
+        
+        footer{
+            background-color: gray;
+            color: white;
+            height: 8rem;
+            width: 100vw;
         }
     </style>
 </head>
@@ -44,6 +86,20 @@
             </ul>
         </nav>
     </header>
+    <div class="container">
+        <aside>Coluna esquerda</aside>
+        <main>Coluna direita</main>
+    </div>
+    <div class="gallery">
+        <img src="500px.jpg" alt=""><img src="500px.jpg" alt=""><img src="500px.jpg" alt=""><img src="500px.jpg" alt=""><img src="500px.jpg" alt=""><img src="500px.jpg" alt=""><img src="500px.jpg" alt=""><img src="500px.jpg" alt=""><img src="500px.jpg" alt="">
+    </div>
+    <button>
+        <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgYmFzZVByb2ZpbGU9InRpbnkiIGhlaWdodD0iMjRweCIgdmVyc2lvbj0iMS4yIiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNHB4IiB4bWw6c3BhY2U9InByZXNlcnZlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj48ZyBpZD0iTGF5ZXJfMSI+PGc+PHBhdGggZD0iTTIwLjc1Niw1LjM0NUMyMC41NjUsNS4xMjYsMjAuMjksNSwyMCw1SDYuMTgxTDUuOTg2LDMuODM2QzUuOTA2LDMuMzU0LDUuNDg5LDMsNSwzSDIuNzVjLTAuNTUzLDAtMSwwLjQ0Ny0xLDEgICAgczAuNDQ3LDEsMSwxaDEuNDAzbDEuODYsMTEuMTY0YzAuMDA4LDAuMDQ1LDAuMDMxLDAuMDgyLDAuMDQ1LDAuMTI0YzAuMDE2LDAuMDUzLDAuMDI5LDAuMTAzLDAuMDU0LDAuMTUxICAgIGMwLjAzMiwwLjA2NiwwLjA3NSwwLjEyMiwwLjEyLDAuMTc5YzAuMDMxLDAuMDM5LDAuMDU5LDAuMDc4LDAuMDk1LDAuMTEyYzAuMDU4LDAuMDU0LDAuMTI1LDAuMDkyLDAuMTkzLDAuMTMgICAgYzAuMDM4LDAuMDIxLDAuMDcxLDAuMDQ5LDAuMTEyLDAuMDY1QzYuNzQ4LDE2Ljk3Miw2Ljg3LDE3LDYuOTk5LDE3QzcsMTcsMTgsMTcsMTgsMTdjMC41NTMsMCwxLTAuNDQ3LDEtMXMtMC40NDctMS0xLTFINy44NDcgICAgbC0wLjE2Ni0xSDE5YzAuNDk4LDAsMC45Mi0wLjM2NiwwLjk5LTAuODU4bDEtN0MyMS4wMzEsNS44NTQsMjAuOTQ1LDUuNTYzLDIwLjc1Niw1LjM0NXogTTE4Ljg0Nyw3bC0wLjI4NSwySDE1VjdIMTguODQ3eiBNMTQsNyAgICB2MmgtM1Y3SDE0eiBNMTQsMTB2MmgtM3YtMkgxNHogTTEwLDd2Mkg3QzYuOTQ3LDksNi44OTksOS4wMTUsNi44NTIsOS4wM0w2LjUxNCw3SDEweiBNNy4wMTQsMTBIMTB2Mkg3LjM0N0w3LjAxNCwxMHogTTE1LDEydi0yICAgIGgzLjQxOGwtMC4yODUsMkgxNXoiLz48Y2lyY2xlIGN4PSI4LjUiIGN5PSIxOS41IiByPSIxLjUiLz48Y2lyY2xlIGN4PSIxNy41IiBjeT0iMTkuNSIgcj0iMS41Ii8+PC9nPjwvZz48L3N2Zz4=" alt="">
+        Carrinho
+    </button>
+    <footer>
+        2022
+    </footer>
     
 </body>
 </html>
