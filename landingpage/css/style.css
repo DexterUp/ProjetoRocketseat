@@ -1,1 +1,88 @@
 @charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat';
+    box-sizing: border-box;
+}
+:root{
+    --primaria : #eb1ccc;
+    --secundaria : #95989a;
+    --texto-cor : #fff;
+    --texto-segundo : #000;
+    --texto-terceiro : #5d5d5d;
+
+}
+#event-description{
+    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/hrz-5.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 85vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--texto-cor);
+}
+#disclaimer h2 , 
+#disclaimer .event-date{
+    color: var(--primaria);
+}
+#disclaimer h2{
+    font-size: 3em;
+    margin-bottom: 1em;
+}
+#disclaimer .about-event{
+    font-size: 2em;
+    text-transform: uppercase;
+    max-width: 350px;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+#disclaimer p{
+    font-size: 1.2em;
+    margin-bottom: 0.3em;
+}
+#disclaimer .event-date{
+    font-weight: bold;
+}
+#subscription-form{
+    background-color: var(--secundaria);
+    padding: 2em;
+    max-width: 22%;
+}
+#subscription-form p{
+    font-size: 1.5em;
+    color: var(--texto-segundo);
+    margin-bottom: 1em;
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: .8em;
+}
+.form-group label{
+    margin-bottom: .3em;
+    color: var(--texto-terceiro);
+    font-weight: bold;
+}
+.form-group input,
+.form-group select{
+    padding: 6px 8px;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+}
+.btn{
+    width: 100%;
+    color: var(--texto-cor);
+    background-color: var(--primaria);
+    opacity: .8;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    padding: 12px;
+    border-radius: 4px;
+}
+.btn:hover{
+    opacity: 1;
+}
